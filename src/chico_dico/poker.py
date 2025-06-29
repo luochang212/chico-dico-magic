@@ -1,3 +1,4 @@
+import random
 from typing import Tuple
 
 
@@ -39,6 +40,14 @@ class PokeMapper:
         suit_index = (num - 1) // 13
         rank_index = (num - 1) % 13
         return self.suits[suit_index], self.ranks[rank_index]
+
+    def is_card(self, card: str) -> bool:
+        return (card in self._card_to_num)
+
+    def random_n_cards(self, n: int = 5):
+        assert 1 <= n <= len(self._card_to_num)
+        n_cards = random.sample(self._card_to_num.keys(), n)
+        return ' '.join(n_cards)
 
     def display_all_mapping(self):
         """显示所有数字到扑克牌的映射"""
