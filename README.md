@@ -1,4 +1,4 @@
-# 🪄 chico-dico-magic
+# chico-dico-magic
 
 [![License](https://img.shields.io/github/license/luochang212/chico-dico-magic)](https://github.com/luochang212/chico-dico-magic)
 [![PyPI](https://img.shields.io/pypi/v/chico-dico.svg?logo=python)](https://pypi.python.org/pypi/chico-dico-magic)
